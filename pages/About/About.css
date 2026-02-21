@@ -1,0 +1,82 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     padding: 100px 8%;
+}
+.title{
+   
+    font-weight: 600;
+    color: orange;
+    cursor: pointer;
+    font-size: 20px;
+}
+.sub-title{
+    font-weight: 400;
+    font-size: 15px;
+    color: #2d68f3;
+}
+p{
+    font-size:14px;
+    line-height: 1.8;
+    
+}
+.about-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.team-sections{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    
+}
+.team-card{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 24px;
+    transition: transform 0.3s;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    cursor: pointer;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+
+}
+@media (max-width:1050px){
+    .team-sections{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:750px){
+    .about{
+        display: flex;
+        align-items: center;
+    }
+    .team-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .team-card{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 24px;
+    transition: transform 0.3s;
+    width:40vw;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    cursor: pointer;
+    margin: 24px;
+}
+}
